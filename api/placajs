@@ -1,0 +1,10 @@
+export default function handler(req, res) {
+  const { placa } = req.query;
+
+  res.status(200).json({
+    placa,
+    modelo: "Fiat Uno",
+    ano: "2008",
+    cor: "Prata"
+  });
+}
